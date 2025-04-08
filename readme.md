@@ -1,1 +1,0 @@
-# otus-css-lipatova
