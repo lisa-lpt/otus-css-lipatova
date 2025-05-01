@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Playfair+Display:wght@500;600&family=Bitter:wght@400">-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@400">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header> 
-    <h2>Mod</h2>
+    <h2 class="heading">Mod</h2>
     <!--Page navigation-->
     <nav> 
       <a href="#biography">Biography</a>
@@ -29,11 +32,10 @@
       <h4>Biography</h4>
       <br>
       <img src="img/kat.jpg" alt="Katya Mills">
-      <h2> Katya Mills</h2>
-      <p>Art Director</p>
-      <br>
-      <p>Scenography/Styling/Creative Photography/Design</p>
-      <blockquote>"The more i deal with the work as something that is my own, as something that is personal,the more successful it is"</blockquote>
+      <h2 id="mills">Katya Mills</h2>
+      <p class="desc"><strong>Art Director</strong></p>
+      <p class="desc"><strong>Scenography/Styling/Creative Photography/Design</strong></p>
+      <blockquote id="quote1">"The more i deal with the work as something that is my own, as something that is personal,the more successful it is"</blockquote>
     </section>
     <!--Designers-->
     <section id="designers">
@@ -43,9 +45,7 @@
         <img src="img/j.jpg" alt="Jess Wonder">
         <figcaption>
           <p><strong>JESS WONDER</strong></p>
-          <br>
           <p><strong>From/</strong> Be more flower</p>
-          <br>
           <p><strong>Skills/</strong> Design Strategy/Marketing</p>
         </figcaption> 
       </figure>
@@ -54,9 +54,7 @@
         <img src="img/kam.jpg" alt="Kameron Klein">
         <figcaption>
           <p><strong>KAMERON CLEIN</strong></p>
-          <br>
           <p><strong>From/</strong> Be more flower</p>
-          <br>
           <p><strong>Skills/</strong> Design Strategy/Marketing</p>
         </figcaption>
       </figure>
@@ -65,9 +63,7 @@
         <img src="img/lou.jpg" alt="Louisse Red">
         <figcaption>
           <p><strong>LOUISSE RED</strong></p>
-          <br>
           <p><strong>From/</strong> Be more flower</p>
-          <br>
           <p><strong>Skills/</strong> Design Strategy/Marketing</p>
         </figcaption>
       </figure>
@@ -78,22 +74,19 @@
       <img src="img/num.jpg" alt="Numbers">
       <table>
         <td>
-          <p>Creativity</p>
-          <br>
+          <p><strong>Creativity</strong></p>
           <a href="https://www.whitepapers.com">www.whitepapers.com</a>
         </td>
         <td>
-          <p>Creativity</p>
-          <br>
+          <p><strong>Creativity</strong></p>
           <a href="https://www.whitepapers.com">www.whitepapers.com</a>
         </td>
         <td>
-          <p>Website</p>
-          <br>
+          <p><strong>Website</strong></p>
           <a href="https://www.whitepapers.com">www.whitepapers.com</a>
         </td>
       </table>
-      <blockquote>I just really want to do good work and work with some great people, people who challenge me. </blockquote>
+      <blockquote id="quote2">I just really want to do good work and work with some great people, people who challenge me. </blockquote>
       <img src="img/pac.jpg" alt="Bag">
     </section>
     <!--Strong points-->
@@ -101,8 +94,8 @@
       <h4>Strong points</h4>
       <img src="img/table.jpg" alt="Table">
       <img src="img/chair.jpg" alt="Chair">
-      <p><strong>Strengths</strong></p>
-      <ul>
+      <p id="strth"><strong>Strengths</strong></p>
+      <ul class="list">
         <li>Interiors</li>
         <li>Outdoors</li>
         <li>Portraits</li>

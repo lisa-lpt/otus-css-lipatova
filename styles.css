@@ -1,0 +1,113 @@
+@font-face{
+    font-family: "Roboto";
+    src: local("Roboto Medium"),
+    local("Roboto-Medium"),
+    url("/fonts/Roboto-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: "Roboto";
+    src: local("Roboto Bold"),
+    local("Roboto-Bold"),
+    url("/fonts/Roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: "Playfair Display";
+    src: local("Playfair Display Medium"),
+    local("PlayfairDisplay-Medium"),
+    url("/fonts/PlayfairDisplay-Medium.ttf") format("truetype");
+    font-weight: 500;
+
+}
+
+@font-face{
+    font-family: "Playfair Display";
+    src: local("Playfair Display Semibold"),
+    local("PlayfairDisplay-Semibold"),
+    url("/fonts/PlayfairDisplay-Semibold.ttf") format("truetype");
+    font-weight: 600;
+}
+
+/*@font-face{
+    font-family: "Bitter";
+    src: local("Bitter Regular"),
+    local("Bitter-Regular"),
+    url("/fonts/Bitter-Regular.ttf") format("truetype");
+    font-weight: 400;
+}*/
+
+body {
+ margin: 1px;
+ font-family: "Roboto",serif;
+ font-weight: 500;
+ font-size:16px;
+ line-height: 1;
+}
+
+.heading{
+ font-family: "Playfair Display", serif;
+ font-weight: 600;
+ font-size:86px;
+ margin:0;
+}
+nav{
+    font-size:24px;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size:86px;
+    margin:0;
+}
+
+h3{
+    font-size:20px;
+}
+
+h4{
+    font-family: 'Roboto',serif;
+    font-weight: 700;
+    font-size:24px;
+}
+
+#mills{
+   font-family: 'Playfair Display', serif;
+   font-weight: 500;
+   font-size: 86px;
+   margin:2px;
+}
+
+.desc{
+    font-size:18px;
+}
+
+blockquote{
+ font-family:"Bitter", serif;
+ font-weight:400;
+}
+
+#quote1{
+    font-size: 26px;
+}
+
+#quote2{
+    font-size: 32px;
+}
+
+#strth{
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size: 86px;
+    margin:1px;
+}
+
+.list{
+ font-family: 'Bitter', serif;
+ font-weight: 400;
+ font-size:34px;
+ margin:1px;
+}
