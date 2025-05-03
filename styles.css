@@ -47,6 +47,10 @@ body {
  line-height: 1;
 }
 
+header{
+    display: flex;
+    justify-content:space-between;
+}
 .heading{
  font-family: "Playfair Display", serif;
  font-weight: 600;
@@ -54,7 +58,13 @@ body {
  margin:0;
 }
 nav{
-    font-size:24px;
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    position: relative;
+    top:30px;
+    left: -20px;
+    font-size: 24px;
 }
 
 h1{
@@ -62,6 +72,15 @@ h1{
     font-weight: 500;
     font-size:86px;
     margin:0;
+}
+
+.box{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background-color:blanchedalmond;
+ min-height: 630px;
 }
 
 h3{
