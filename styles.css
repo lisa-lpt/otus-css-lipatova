@@ -47,6 +47,15 @@ body {
   line-height: 1;
 }
 
+img {
+  width: 100%;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
 .heading{
   font-family: "Playfair Display", serif;
   font-weight: 600;
@@ -55,14 +64,39 @@ body {
 }
 
 nav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-right: 20px;
+  gap: 55px;
   font-size: 24px;
 }
 
 h1{
   font-family: 'Playfair Display', serif;
   font-weight: 500;
-  font-size: 86px;
-  margin: 0;
+  font-size:86px;
+  margin:0;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:blanchedalmond;
+  min-height: 630px;
+  background-image: url(/img/ms.jpg);
+}
+
+.box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 110px 130px 90px 130px;
+  background-color: white;
 }
 
 h3{
