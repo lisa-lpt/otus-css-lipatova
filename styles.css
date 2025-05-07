@@ -43,43 +43,43 @@ body {
   margin: 1px;
   font-family: "Roboto",serif;
   font-weight: 500;
-  font-size:16px;
+  font-size: 16px;
   line-height: 1;
 }
 
 .heading{
   font-family: "Playfair Display", serif;
   font-weight: 600;
-  font-size:86px;
-  margin:0;
+  font-size: 86px;
+  margin: 0;
 }
 
 nav{
-  font-size:24px;
+  font-size: 24px;
 }
 
 h1{
   font-family: 'Playfair Display', serif;
   font-weight: 500;
-  font-size:86px;
-  margin:0;
+  font-size: 86px;
+  margin: 0;
 }
 
 h3{
   font-size:20px;
 }
 
-h4{
-  font-family: 'Roboto',serif;
+h4{/* все заголовки категорий*/
+  font-family: 'Roboto', serif;
   font-weight: 700;
-  font-size:24px;
+  font-size: 24px;
 }
 
 #mills{
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   font-size: 86px;
-  margin:2px;
+  margin: 2px;
 }
 
 .desc{
@@ -87,8 +87,8 @@ h4{
 }
 
 blockquote{
-  font-family:"Bitter", serif;
-  font-weight:400;
+  font-family: 'Bitter', serif;
+  font-weight: 400;
 }
 
 #quote1{
@@ -100,7 +100,7 @@ blockquote{
 }
 
 #strth{
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 500;
   font-size: 86px;
   margin:1px;
@@ -109,6 +109,8 @@ blockquote{
 .list{
   font-family: 'Bitter', serif;
   font-weight: 400;
-  font-size:34px;
-  margin:1px;
+  font-size: 34px;
+  margin: 1px;
 }
+
+/*Селекторы по индентификатору использованы для элементов, в которых надо задать уникальные для них параметры.  Если можно было задать общие правила для элемента по тегу, то задавалось по тегу.*/
