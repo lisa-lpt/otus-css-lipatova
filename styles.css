@@ -1,0 +1,150 @@
+@font-face{
+  font-family: "Roboto";
+  src: local("Roboto Medium"),
+  local("Roboto-Medium"),
+  url("/fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: "Roboto";
+  src: local("Roboto Bold"),
+  local("Roboto-Bold"),
+  url("/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face{
+  font-family: "Playfair Display";
+  src: local("Playfair Display Medium"),
+  local("PlayfairDisplay-Medium"),
+  url("/fonts/PlayfairDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  
+}
+
+@font-face{
+  font-family: "Playfair Display";
+  src: local("Playfair Display Semibold"),
+  local("PlayfairDisplay-Semibold"),
+  url("/fonts/PlayfairDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+/*@font-face{
+font-family: "Bitter";
+src: local("Bitter Regular"),
+local("Bitter-Regular"),
+url("/fonts/Bitter-Regular.ttf") format("truetype");
+font-weight: 400;
+}*/
+
+body {
+  margin: 1px;
+  font-family: "Roboto",serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+}
+
+img {
+  width: 100%;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading{
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 86px;
+  margin: 0;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-right: 20px;
+  gap: 55px;
+  font-size: 24px;
+}
+
+h1{
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size:86px;
+  margin:0;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:blanchedalmond;
+  min-height: 630px;
+  background-image: url(/img/ms.jpg);
+}
+
+.box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 110px 130px 90px 130px;
+  background-color: white;
+}
+
+h3{
+  font-size:20px;
+}
+
+h4{/* все заголовки категорий*/
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#mills{
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 86px;
+  margin: 2px;
+}
+
+.desc{
+  font-size:18px;
+}
+
+blockquote{
+  font-family: 'Bitter', serif;
+  font-weight: 400;
+}
+
+#quote1{
+  font-size: 26px;
+}
+
+#quote2{
+  font-size: 32px;
+}
+
+#strth{
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 86px;
+  margin:1px;
+}
+
+.list{
+  font-family: 'Bitter', serif;
+  font-weight: 400;
+  font-size: 34px;
+  margin: 1px;
+}
+
+/*Селекторы по индентификатору использованы для элементов, в которых надо задать уникальные для них параметры.  Если можно было задать общие правила для элемента по тегу, то задавалось по тегу.*/
