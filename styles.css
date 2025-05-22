@@ -111,10 +111,11 @@ h3 {
 .biography {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   align-items: flex-start; 
-  flex-wrap: wrap;
-  padding: 150px 137px 150px 137px;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  margin: 150px 137px 150px 137px;
 }
 
 .biography-title {
@@ -130,13 +131,18 @@ h4 {/* все заголовки категорий*/
 }
 
 .biography-title-text {
-  width: 88px;
+  max-width: 88px;
   margin: 0;
   transform: rotate(-90deg) translateX(-58px);
 }
 
-#img-mills {
+.katya{
+  min-width: 300px;
   max-width: 570px;
+}
+
+.img-mills {
+  width: 100%;
   object-fit: cover;
 }
 
@@ -149,11 +155,11 @@ h4 {/* все заголовки категорий*/
   gap: 42px;
 }
 
-#mills {
+.mills {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   font-size: 86px;
-  width: 230px; 
+  max-width: 230px; 
   line-height: 130%;
   word-spacing: 200px;
 }
@@ -167,8 +173,8 @@ blockquote {
   font-weight: 400;
 }
 
-#quote1 {
-  width: 375px;
+.quote1 {
+  max-width: 375px;
   line-height: 115%;
   padding-top: 22px;
   font-size: 26px;
@@ -214,6 +220,10 @@ blockquote {
   grid-row: 1/-1; 
 }
 
+.numbers{
+  width: 100%;
+}
+
 .whitepapers {
   grid-column: 1;
   grid-row: 1/4;
@@ -237,10 +247,10 @@ blockquote {
   place-self: center;
 }
 
-#quote2 {
+.quote2 {
   padding: 45px 10px 0 0;
   line-height: 120%;
-  width: 221px;
+  max-width: 221px;
   grid-column: 4;
   grid-row: 1/6;
   font-size: 32px;
@@ -254,6 +264,10 @@ blockquote {
   grid-row: 6/-1;
   align-self: start;
   justify-self: center;
+}
+
+.bag{
+  width: 100%;
 }
 
 #strth {
