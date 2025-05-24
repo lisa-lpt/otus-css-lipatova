@@ -319,16 +319,56 @@ blockquote {
 
 /* Strong points */
 
-#strth {
+.strong-points-title {
+  margin: 140px 0 30px 260px;  
+}
+
+.strong-points {
+  margin-left: 20px;
+  display: flex;
+  gap: 20px;
+  /* overflow-x: auto; */
+}
+
+.img-strong-points {
+  height: 554;
+  max-width: 335px;
+}
+
+.img-table {
+  width: 100%;
+}
+
+.img-chair {
+  width: 100%;
+}
+
+.strth {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+  max-width: 451px;
+}
+
+.strth-title {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   font-size: 86px;
-  margin:1px;
 }
 
-.list {
+.strth-list {
   font-family: 'Bitter', serif;
   font-weight: 400;
   font-size: 34px;
-  margin: 1px;
+  line-height: 125%;
+}
+
+.img-strong-points-num {
+  max-width: 240px;
+}
+.img-numbers-sp {
+  height: 554px;
+  width: 100%;
 }
