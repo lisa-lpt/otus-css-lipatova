@@ -52,6 +52,8 @@ body {
   max-width: 1440px;
 }
 
+/* Header */
+
 header.container {
   display: flex;
   justify-content: space-between;
@@ -74,6 +76,8 @@ nav {
   gap: 55px;
   font-size: 24px;
 }
+
+/* Mod studio */
 
 h1 {
   font-family: 'Playfair Display', serif;
@@ -108,6 +112,8 @@ h3 {
   font-size: 20px;
 }
 
+/* Biography */
+
 .biography {
   display: flex;
   flex-direction: row;
@@ -115,7 +121,7 @@ h3 {
   align-items: flex-start; 
   justify-content: center;
   /* flex-wrap: wrap; */
-  margin: 150px 137px 150px 137px;
+  margin: 150px 137px 150px 125px;
 }
 
 .biography-title {
@@ -180,18 +186,59 @@ blockquote {
   font-size: 26px;
 }
 
-.designers {
-  margin-bottom: 30px;
-  height: 619px;
-  display: flex;
-  gap: 20px;
-  align-content: flex-start;
-  overflow-x: auto;
-}
+/*Designers*/
 
 .designers-title {
   margin: 5px 0 30px 140px;
 }
+
+.designers {
+  margin: 0 0 130px 21px;
+  /* height: 619px; */
+  height: 640px;
+  display: flex;
+  gap: 22px;
+  align-items: baseline;
+  overflow-x: auto;
+}
+
+.designers-item{
+  width: 100%;
+}
+
+/* big card start */
+.img-jess{
+  height: 538px;
+  max-width: 572px;
+}
+
+.big-designers{
+  padding-right: 90px;
+  justify-self: right;
+}
+/* big card end */
+
+.img-kameron{
+  height: 440px;
+  max-width: 336px;
+}
+
+.img-louisse{
+  height: 440px;
+  max-width: 336px;
+}
+
+.img-kameron2{
+  height: 440px;
+  max-width: 336px;
+}
+
+.desc-designers{
+  line-height: 120%;
+  margin-top: 22px;
+}
+
+/* Testimonials */
 
 .testimonials {
   margin: 0 auto;
@@ -269,6 +316,8 @@ blockquote {
 .bag{
   width: 100%;
 }
+
+/* Strong points */
 
 #strth {
   font-family: 'Playfair Display', serif;
