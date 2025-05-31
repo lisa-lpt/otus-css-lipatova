@@ -103,7 +103,7 @@ h1 {
   justify-content: flex-start;
   align-items: center;
   /* padding: 120px 130px 90px 130px; */
-  max-width: 690px;
+  width: 690px;
   height: 360px;
   background-color: white;
 }
@@ -327,10 +327,11 @@ blockquote {
   margin: 0 0 140px 20px;
   display: flex;
   gap: 20px;
+  overflow-x: auto;
 }
 
 .img-strong-points {
-  height: 554;
+  height: 554px;
   max-width: 335px;
 }
 
@@ -366,10 +367,16 @@ blockquote {
 
 .img-strong-points-num {
   max-width: 240px;
+  max-height: 574px;
+  display: flex;
+  gap: 10px;
+  /* scroll only for the right pictures */
+  /* overflow-x: auto; */
 }
-.img-numbers-sp {
-  height: 554px;
-  width: 100%;
+
+ .img-numbers-sp {
+  height: 552px;;
+  max-width: 331px; 
 }
 
 @supports (display: grid) {
