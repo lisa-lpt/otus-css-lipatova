@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header> 
+  <header class="container"> 
     <h2 class="heading">Mod</h2>
     <!--Page navigation-->
     <nav> 
@@ -20,8 +20,7 @@
       <a href="#strong-points">Strong points</a>
     </nav>
   </header>
-  <br>
-  <main>
+  <main class="container">
     <!--Main picture-->
     <section class="box">
       <div class="box-text">
@@ -31,94 +30,131 @@
      <!-- <img src="img/ms.jpg" alt="Modern Web Studio">-->
     </section>
     <!--Biography-->
-    <section id="biography">
-      <h4>Biography</h4>
-      <br>
-      <img src="img/kat.jpg" alt="Katya Mills">
-      <h2 id="mills">Katya Mills</h2>
-      <p class="desc"><strong>Art Director</strong></p>
-      <p class="desc"><strong>Scenography/Styling/Creative Photography/Design</strong></p>
-      <blockquote id="quote1">"The more i deal with the work as something that is my own, as something that is personal,the more successful it is"</blockquote>
+    <section class="biography" id="biography">
+      <div class="biography-title"> 
+        <div class="katya">
+      <img class="img-mills" src="img/kat.jpg" alt="Katya Mills">
+        </div>
+        <h4 class="biography-title-text">Biography</h4>
+      </div>
+      <div class="biography-text">
+        <h2 class="mills">Katya Mills</h2>
+        <div class="desc">
+          <p><strong>Art Director</strong></p>
+          <p><strong>Scenography / Styling / Creative Photography / Design</strong></p>
+        </div>
+        <blockquote class="quote1">"The more i deal with the work as something that is my own, as something that is personal, the more successful it is"</blockquote>
+      </div>
     </section>
     <!--Designers-->
     <section id="designers">
-      <h4>Designers</h4>
-      <br>
-      <figure>
-        <img src="img/j.jpg" alt="Jess Wonder">
-        <figcaption>
-          <p><strong>JESS WONDER</strong></p>
-          <p><strong>From/</strong> Be more flower</p>
-          <p><strong>Skills/</strong> Design Strategy/Marketing</p>
-        </figcaption> 
-      </figure>
-      <br>
-      <figure>
-        <img src="img/kam.jpg" alt="Kameron Klein">
-        <figcaption>
+      <h4 class="designers-title">Designers</h4>
+      <ul class="designers">
+        <li class="designers-item">
+            <img class="img-jess" src="img/j.jpg" alt="Jess Wonder">
+            <div class="desc-designers big-designers">
+              <p><strong>JESS WONDER</strong></p>
+              <p><strong>From/</strong> Be more flower</p>
+              <p><strong>Skills/</strong> Design Strategy/Marketing</p>
+            </div> 
+        </li>
+      <li class="designers-item">
+        <img class="img-kameron" src="img/kam.jpg" alt="Kameron Klein">
+        <div class="desc-designers">
           <p><strong>KAMERON CLEIN</strong></p>
           <p><strong>From/</strong> Be more flower</p>
           <p><strong>Skills/</strong> Design Strategy/Marketing</p>
-        </figcaption>
-      </figure>
-      <br>
-      <figure>
-        <img src="img/lou.jpg" alt="Louisse Red">
-        <figcaption>
+        </div>
+      </li>
+      <li class="designers-item">
+        <img class="img-louisse" src="img/lou.jpg" alt="Louisse Red">
+        <div class="desc-designers">
           <p><strong>LOUISSE RED</strong></p>
           <p><strong>From/</strong> Be more flower</p>
           <p><strong>Skills/</strong> Design Strategy/Marketing</p>
-        </figcaption>
-      </figure>
+        </div>
+      </li>
+      <li class="designers-item">
+        <img class="img-kameron2" src="img/kam.jpg" alt="Kameron Klein">
+        <div class="desc-designers">
+          <p><strong>KAMERON CLEIN</strong></p>
+          <p><strong>From/</strong> Be more flower</p>
+          <p><strong>Skills/</strong> Design Strategy/Marketing</p>
+        </div>
+      </li>
+      </ul>
     </section>
     <!-- Testimonials-->
-    <section id="testimonials">
-      <h4>Testimonials</h4>
-      <img src="img/num.jpg" alt="Numbers">
-      <table>
-        <td>
-          <p><strong>Creativity</strong></p>
-          <a href="https://www.whitepapers.com">www.whitepapers.com</a>
-        </td>
-        <td>
-          <p><strong>Creativity</strong></p>
-          <a href="https://www.whitepapers.com">www.whitepapers.com</a>
-        </td>
-        <td>
-          <p><strong>Website</strong></p>
-          <a href="https://www.whitepapers.com">www.whitepapers.com</a>
-        </td>
-      </table>
-      <blockquote id="quote2">I just really want to do good work and work with some great people, people who challenge me. </blockquote>
-      <img src="img/pac.jpg" alt="Bag">
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-grid">
+      <h4 class="testimonials-title">Testimonials</h4>
+      <div class="img-numbers">
+      <img class="numbers" src="img/num.jpg" alt="Numbers">
+      </div>
+      <div class="creativity1">
+        <p><strong>Creativity</strong></p>
+        <a href="https://www.whitepapers.com">www.whitepapers.com</a>
+      </div>
+      <div class="creativity2">
+        <p><strong>Creativity</strong></p>
+        <a href="https://www.whitepapers.com">www.whitepapers.com</a>
+      </div>
+      <div class="whitepapers">
+        <p><strong>Website</strong></p>
+        <a href="https://www.whitepapers.com">www.whitepapers.com</a>
+      </div>
+      <blockquote class="quote2">I just really want to do good work <br/> and work with some great people, people who challenge me. </blockquote>
+      <div class="img-bag">
+        <img class="bag" src="img/pac.jpg" alt="Bag">
+      </div>
+      </div>
     </section>
     <!--Strong points-->
     <section id="strong-points">
-      <h4>Strong points</h4>
-      <img src="img/table.jpg" alt="Table">
-      <img src="img/chair.jpg" alt="Chair">
-      <p id="strth"><strong>Strengths</strong></p>
-      <ul class="list">
-        <li>Interiors</li>
-        <li>Outdoors</li>
-        <li>Portraits</li>
-        <li>Styling</li>
-        <li>Events</li>
-        <li>Architecture</li>
-        <li>Design</li>
-        <li>Celebrations</li>
-        <li>Fashion</li>
-        <li>Nature</li>
-      </ul>
+      <h4 class="strong-points-title">Strong points</h4>
+      <div class="strong-points">
+        <div class="img-strong-points">
+          <img class="img-table" src="img/table.jpg" alt="Table">
+        </div>
+        <div class="img-strong-points">
+          <img class="img-chair" src="img/chair.jpg" alt="Chair">
+        </div>
+        <div class="strth">
+          <p class="strth-title"><strong>Strengths</strong></p>
+          <ul class="strth-list">
+            <li>Interiors</li>
+            <li>Outdoors</li>
+            <li>Portraits</li>
+            <li>Styling</li>
+            <li>Events</li>
+            <li>Architecture</li>
+            <li>Design</li>
+            <li>Celebrations</li>
+            <li>Fashion</li>
+            <li>Nature</li>
+          </ul>
+        </div>
+        <div class="img-strong-points-num">
+          <div>
+            <img class="img-numbers-sp" src="img/num.jpg" alt="Numbers">
+          </div>
+          <div>
+            <img class="img-numbers-sp" src="img/num.jpg" alt="Numbers">
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <!--Footer-->
-  <footer>
-    <a href="tel:+79211234567">+7 921 123-45-67</a>
-    <br>
-    <a href="mailto:info@modstudio.com">INFO@MODSTUDIO.COM</a>
-    <p>A product of <strong>MOD</strong></p> 
-    <p> &copy; 2023 Mod Media.All rights reserved</p>
+  <footer class="container">
+    <div class="footer">
+      <div class="tel-mail">
+        <a href="tel:+79211234567">+7 921 123-45-67</a>
+        <a href="mailto:info@modstudio.com">INFO@MODSTUDIO.COM</a>
+      </div>
+      <p>A product of <strong class="mod">MOD</strong></p> 
+      <p> &copy; 2023 Mod Media.All rights reserved</p>
+    </div>
   </footer>
 </body>
 </html>
