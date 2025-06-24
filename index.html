@@ -13,11 +13,19 @@
   <header class="container"> 
     <h2 class="heading">Mod</h2>
     <!--Page navigation-->
-    <nav> 
+    <nav class="nav-desctop"> 
       <a href="#biography">Biography</a>
       <a href="#designers">Designers</a>
       <a href="#testimonials">Testimonials</a>
       <a href="#strong-points">Strong points</a>
+      <img class="icon" src="img/union.svg" alt="icon">
+    </nav>
+    <nav class="nav-tablet"> 
+      <a href="#biography">B</a>
+      <a href="#designers">D</a>
+      <a href="#testimonials">T</a>
+      <a href="#strong-points">S</a>
+      <img class="icon" src="img/union.svg" alt="icon">
     </nav>
   </header>
   <main class="container">
@@ -27,23 +35,38 @@
         <h1>Mod Studio</h1>
         <h3>Modern Web Studio</h3>
       </div>
-     <!-- <img src="img/ms.jpg" alt="Modern Web Studio">-->
+      <div class="box-img">
+      <img class="ms-img" src="img/ms.jpg" alt="Modern Web Studio">
+      </div>
     </section>
     <!--Biography-->
     <section class="biography" id="biography">
-      <div class="biography-title"> 
-        <div class="katya">
-      <img class="img-mills" src="img/kat.jpg" alt="Katya Mills">
-        </div>
-        <h4 class="biography-title-text">Biography</h4>
+      <div class="katya">
+        <img class="img-mills" src="img/kat.jpg" alt="Katya Mills">
       </div>
-      <div class="biography-text">
-        <h2 class="mills">Katya Mills</h2>
-        <div class="desc">
-          <p><strong>Art Director</strong></p>
-          <p><strong>Scenography / Styling / Creative Photography / Design</strong></p>
+      <div class="biography-title"> 
+      <h4 class="biography-title-text">Biography</h4>
+        <div class="biography-text">
+          <h2 class="mills">Katya Mills</h2>
+          <div class="mills_desc">
+            <blockquote class="quote1">"The more i deal with the work as something that is my own, as something that is personal, the more successful it is"</blockquote>
+            <div class="desc">
+            <div class="desc-desctop">
+              <p><strong>Art Director</strong></p>
+              <p><strong>Scenography / Styling / Creative Photography / Design</strong></p>
+            </div>
+            <div class="desc-tablet">
+              <p><strong>Art Director</strong></p>
+              <ul>
+                <li>-Scenography</li>
+                <li>-Styling</li>
+                <li>-Creative Photography</li>
+                <li>-Design</li>
+              </ul>
+            </div>
+            </div>
+          </div>
         </div>
-        <blockquote class="quote1">"The more i deal with the work as something that is my own, as something that is personal, the more successful it is"</blockquote>
       </div>
     </section>
     <!--Designers-->
@@ -113,11 +136,14 @@
     <section id="strong-points">
       <h4 class="strong-points-title">Strong points</h4>
       <div class="strong-points">
+        <div class="strong-points_container">
         <div class="img-strong-points">
+        <div class="img-strong-points_img">
           <img class="img-table" src="img/table.jpg" alt="Table">
         </div>
-        <div class="img-strong-points">
+        <div class="img-strong-points_img">
           <img class="img-chair" src="img/chair.jpg" alt="Chair">
+        </div>
         </div>
         <div class="strth">
           <p class="strth-title"><strong>Strengths</strong></p>
@@ -133,6 +159,7 @@
             <li>Fashion</li>
             <li>Nature</li>
           </ul>
+        </div>
         </div>
         <div class="img-strong-points-num">
           <div>
