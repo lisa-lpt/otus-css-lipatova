@@ -16,11 +16,18 @@
 
 @font-face {
   font-family: "Playfair Display";
+  src: local("Playfair Display Regular"),
+  local("PlayfairDisplay-Regular"),
+  url("/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Playfair Display";
   src: local("Playfair Display Medium"),
   local("PlayfairDisplay-Medium"),
   url("/fonts/PlayfairDisplay-Medium.ttf") format("truetype");
   font-weight: 500;
-  
 }
 
 @font-face {
@@ -98,7 +105,11 @@ header.container {
     flex-wrap: wrap;
     width: 100%;
     font-size: 24px;
-}
+    font-family: "Bitter", serif;
+    font-weight: 400;
+    font-size: 40px;
+  }
+
 }
 
 /* Mod studio */
@@ -109,6 +120,13 @@ h1 {
   font-size: 86px;
   margin-top: 120px;
   margin-bottom: 25px;
+}
+
+@media (max-width: 768px){
+  h1{
+    font-weight: 400;
+    font-size: 70px;
+  }
 }
 
 .box {
@@ -166,6 +184,12 @@ h3 {
   font-size: 20px;
 }
 
+@media (max-weight: 768px){
+  h3{
+    font-size: 18px;
+  }
+}
+
 /* Biography */
 
 .biography {
@@ -204,6 +228,12 @@ h4 {/* все заголовки категорий*/
   font-family: 'Roboto', serif;
   font-weight: 700;
   font-size: 24px;
+}
+
+@media (max-width: 768px){
+  h4{
+    font-size: 18px;
+  }
 }
 
 .biography-title-text {
@@ -270,6 +300,8 @@ h4 {/* все заголовки категорий*/
     .mills{
       max-width: 525px;
       word-spacing: normal;
+      font-weight: 400;
+      font-size: 64px; 
     }
   }
 
@@ -312,6 +344,8 @@ blockquote {
 @media (max-width: 768px){
   .quote1{
     max-width: 525px;
+    font-weight: 300;
+    font-size: 30px;
   }
 }
 
@@ -510,6 +544,8 @@ blockquote {
     justify-self: center;
     max-width: 364px;
     padding: 0;
+    font-weight: 300;
+    font-size: 30px;
   }
   .img-bag{
     padding-top: 16px;
@@ -552,6 +588,9 @@ blockquote {
 }
 
 @media (max-width: 768px){
+  .strong-points{
+    margin: 0 0 80px 20px;
+  }
   .strong-points_container{
     display: flex;
     flex-direction: row-reverse;
@@ -575,6 +614,15 @@ blockquote {
 .img-strong-points_img {
   height: 554px;
   max-width: 335px;
+}
+
+@media (max-width: 768px){
+  .img-strong-points{
+    height: 450px;
+  }
+  .img-strong-points_img{
+    height: 450px;
+  }
 }
 
 .img-table {
@@ -605,6 +653,20 @@ blockquote {
   font-weight: 400;
   font-size: 34px;
   line-height: 125%;
+}
+
+@media (max-width: 768px){
+  .strth-title{
+    font-weight: 400;
+    font-size: 46px;
+  }
+  .strth-list{
+    height: 362px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 24px;
+  }
 }
 
 .img-strong-points-num {
@@ -674,4 +736,17 @@ blockquote {
 }
 .mod {
   font-size: 24px;
+}
+
+.footer-copyright_tablet{
+  display: none;
+}
+
+@media (max-width: 768px){
+  .footer-copyright_desctop{
+    display: none;
+  }
+  .footer-copyright_tablet{
+    display: contents;
+  }
 }
