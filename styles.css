@@ -465,8 +465,8 @@ blockquote {
 
 @media (max-width: 768px){
   .testimonials-grid{
-    /* grid-template-columns: minmax(20px, 1fr) minmax(20px, 1fr) minmax(20px, 1fr) minmax(20px, 1fr) minmax(20px, 1fr) minmax(20px, 1fr); */
-    grid-column: auto;
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-column: auto; */
     grid-template-rows: repeat(3,1fr);
     height: 442px;
     padding-left: 0;
