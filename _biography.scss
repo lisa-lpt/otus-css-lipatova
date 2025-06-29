@@ -1,0 +1,131 @@
+.biography {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; 
+  justify-content: center;
+  margin: 150px 137px 150px 125px;
+}
+
+@media (max-width: 768px){
+  .biography{
+    flex-direction: column-reverse;
+    margin: 0 0 80px 0;
+  }
+}
+
+.biography-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px){
+  .biography-section{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+}
+.biography-section__title {
+  max-width: 88px;
+  margin: 0;
+  transform: rotate(-90deg) translateX(-58px);
+}
+
+@media (max-width: 768px){
+  .biography-section__title{
+    transform: none;
+    max-width: 100%;
+  }
+}
+
+.biography__img-container{
+  min-width: 300px;
+  max-width: 570px;
+}
+
+.biography__img{
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px){
+  .biography__img-container{
+    max-width: 768px;
+    height: 400px;
+  }
+  .biography__img{
+    height: 100%;
+    aspect-ratio: calc(768/400);
+  }
+}
+
+.biography-text {
+  margin-left: 54px;
+  margin-top: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 42px;
+}
+
+@media (max-width: 768px){
+  .biography-text{
+    flex-direction: column-reverse;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
+
+.biography-text__name {
+  @include txt('Playfair Display', 500, 86px);
+  max-width: 230px; 
+  line-height: 130%;
+  word-spacing: 200px;
+}
+
+  @media (max-width: 768px){
+    .biography-text__name{
+      max-width: 525px;
+      word-spacing: normal;
+      @include txt('Playfair Display', 400, 64px);
+    }
+  }
+
+.biography-desc__text_desktop {
+  font-size:18px;
+}
+
+.biography-desc__text_tablet {
+  display: none;
+}
+
+@media (max-width: 768px){
+  .biography-desc__text_desktop{
+    display: none;
+  }
+  .biography-desc__text_tablet{
+    display: contents;
+    font-size: 18px;
+  }
+}
+
+.biography-text__desc{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.biography-desc__quote {
+  @include txt('Bitter', 400, 26px);
+  max-width: 375px;
+  line-height: 115%;
+  padding-top: 22px;
+}
+
+@media (max-width: 768px){
+  .biography-desc__quote{
+    max-width: 525px;
+    @include txt('Bitter', 300, 30px);
+  }
+}
