@@ -13,20 +13,38 @@
   <header class="container header"> 
     <h2 class="header__heading">Mod</h2>
     <!--Page navigation-->
-    <nav class="header-nav header__nav_desktop"> 
-      <a href="#biography">Biography</a>
-      <a href="#designers">Designers</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#strong-points">Strong points</a>
-      <img class="header-nav__icon" src="img/union.svg" alt="icon">
-    </nav>
-    <nav class="header-nav header__nav_tablet"> 
-      <a href="#biography">B</a>
-      <a href="#designers">D</a>
-      <a href="#testimonials">T</a>
-      <a href="#strong-points">S</a>
-      <img class="header-nav__icon" src="img/union.svg" alt="icon">
-    </nav>
+    <div class="header__nav">
+      <div class="header__nav-container">
+        <nav class="header__nav_desktop"> 
+          <a href="#biography">Biography</a>
+          <a href="#designers">Designers</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#strong-points">Strong points</a>
+        </nav>
+        <nav class="header__nav_tablet"> 
+          <a href="#biography">B</a>
+          <a href="#designers">D</a>
+          <a href="#testimonials">T</a>
+          <a href="#strong-points">S</a>
+        </nav>
+      </div>
+      <div class="modal">
+        <button id="modal-wrap" onclick="window.dialog.showModal()"> 
+          <img src="img/union.svg" alt="icon">
+        </button>
+        <dialog id="dialog">
+          <div class="dialog__text-container">
+            <h3>Get in touch</h3>
+            <div class="dialog__text">
+              <p>Do you have any questions?Have someting to say?</p>
+              <p>Don't be shy, write to us:</p>
+            </div>
+          </div>
+          <button id="modal__cancel" onclick="window.dialog.close()">Cancel</button>
+          <button id="modal__send"> Send</button>
+        </dialog>
+      </div>
+    </div>
   </header>
   <main class="container">
     <!--Main picture-->
