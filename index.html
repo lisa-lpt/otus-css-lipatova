@@ -28,11 +28,13 @@
           <a href="#strong-points">S</a>
         </nav>
       </div>
+      <!-- Popup -->
       <div class="modal">
         <button id="modal-wrap" onclick="window.dialog.showModal()"> 
           <img src="img/union.svg" alt="icon">
         </button>
         <dialog id="dialog">
+          <div class="dialog-container">
           <div class="dialog__text-container">
             <h3>Get in touch</h3>
             <div class="dialog__text">
@@ -40,8 +42,24 @@
               <p>Don't be shy, write to us:</p>
             </div>
           </div>
+          <form action="#" method="get">
+          <label class="dialog__name">
+            <span>Name</span>
+            <input class="name__input" type="text" name="name" placeholder=" 3+ Characters" required>
+          </label>
+          <label class="dialog__email">
+            <span>E-mail</span>
+            <input class="email__input" type="email" name="email" placeholder=" name@email.com" required>
+          </label>
+          <label class="dialog__comment">
+            <span>Comment</span>
+            <textarea class="comment__input" placeholder=" Some text..."></textarea>
+          </label>
           <button id="modal__cancel" onclick="window.dialog.close()">Cancel</button>
-          <button id="modal__send"> Send</button>
+          <!-- <input id="modal__send" type="submit" value="Send"/> -->
+          <button id="modal__send" type="submit" >Send</button>
+        </form>
+        </div>
         </dialog>
       </div>
     </div>
