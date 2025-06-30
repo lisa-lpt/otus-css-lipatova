@@ -1,3 +1,8 @@
+@mixin shape($height, $width){
+    height: $height;
+    width: $width;
+}
+
 .modal{
   align-self: center;
 }
@@ -10,16 +15,20 @@
   &::backdrop{
     background-color: rgba(0, 0, 0, 0.5);
   }
-  height: 589px;
-  width: 476px;
   position: fixed;
   border: none;
-  padding: 26px;
   @include txt("Roboto", 500, 16px);
+ }
+
+ .dialog-container{
+    @include shape(589px, 476px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
  }
  .dialog__text-container{
    height: 90px;
-   max-width: 424px;
+   width: 424px;
    display: flex;
    flex-direction: column;
    justify-content: space-around;
@@ -30,29 +39,100 @@
   }
   .dialog__text{
     height: 41px;
+     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   
   @media (max-width: 768px){
-    #dialog{
+    .dialog-container{
       width: 442px;
     }
     .dialog__text-container{
-      max-width: 390px;
+      max-width: 402px;
     }
   }
   
   @media (max-width: 450px){
-    #dialog{
+    .dialog-container{
       width: 363px;
     }
     .dialog__text-container{
-      max-width: 311px;
+      width: 323px;
     }
     .dialog__text{
       height: 60px;
     }
   }
 
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 360px;
+    width: 435px;
+    margin-top: 24px;
+  }
+
+  @media (max-width: 768px){
+    form{
+        width: 402px;
+    }
+  }
+
+  @media (max-width: 450px){
+    form{
+        width: 323px;
+    }
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .dialog__name{
+    height: 81px;
+  }
+
+  .dialog__email{
+    height: 81px;
+  }
+
+  .dialog__comment{
+    height: 134px;
+  }
+
+  .name__input{
+    @include shape(45px, 424px);
+    border-radius: 8px;
+  }
+
+  .email__input{
+    @include shape(42px, 424px);
+    border-radius: 8px;
+  }
+
+  .comment__input{
+    @include shape(95px, 424px);
+    border-radius: 8px;
+    font-family: inherit;
+    resize: none;
+    border-width: 2px;
+  }
+
+  @media (max-width: 768px){
+    .name__input, .email__input, .comment__input{
+        width: 390px;
+    }
+  }
+
+   @media (max-width: 450px){
+    .name__input, .email__input, .comment__input{
+        width: 311px;
+    }
+  }
   .button-style{
   height: 54px;
   border-width: 1px;
