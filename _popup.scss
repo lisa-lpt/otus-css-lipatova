@@ -1,0 +1,104 @@
+.modal{
+  align-self: center;
+}
+#modal-wrap{
+  border: none;
+  background-color: white;
+  margin-right: 15px;
+}
+ #dialog{
+  &::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  height: 589px;
+  width: 476px;
+  position: fixed;
+  border: none;
+  padding: 26px;
+  @include txt("Roboto", 500, 16px);
+ }
+ .dialog__text-container{
+   height: 90px;
+   max-width: 424px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+  }
+  
+  .dialog__text-container h3{
+    @include txt('Roboto', 700, 22px);
+  }
+  .dialog__text{
+    height: 41px;
+  }
+  
+  @media (max-width: 768px){
+    #dialog{
+      width: 442px;
+    }
+    .dialog__text-container{
+      max-width: 390px;
+    }
+  }
+  
+  @media (max-width: 450px){
+    #dialog{
+      width: 363px;
+    }
+    .dialog__text-container{
+      max-width: 311px;
+    }
+    .dialog__text{
+      height: 60px;
+    }
+  }
+
+  .button-style{
+  height: 54px;
+  border-width: 1px;
+  border-radius: 8px;
+}
+
+#modal__cancel{
+  @extend .button-style;
+  width: 208px;
+  background-color: white;
+  position: absolute;
+  bottom: 26px;
+  left: 24px;
+}
+@media (max-width: 768px){
+    #modal__cancel{
+        width: 188px;
+        left: 27px;
+    }
+}
+@media (max-width: 450px){
+    #modal__cancel{
+        width: 147px;
+        left: 28px;
+    }
+}
+
+#modal__send{
+  @extend .button-style;
+  width: 208px;
+  background-color: black;
+  color: white; 
+  position: absolute;
+  bottom: 26px;
+  right: 24px;
+}
+
+@media (max-width: 768px){
+    #modal__send{
+        width: 188px;
+        right: 27px;
+    }
+}
+@media (max-width: 450px){
+    #modal__send{
+        width: 147px;
+        right: 28px;
+    }
+}
