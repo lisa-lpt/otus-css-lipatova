@@ -66,6 +66,7 @@
   }
 
   form{
+    @include txt("Roboto", 500, 18px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -94,32 +95,64 @@
 
   .dialog__name{
     height: 81px;
+    position: relative;
+    &::after{
+        // height: auto;
+        content: url(img/name.svg);
+        position: absolute;
+        right: 10px;
+        bottom: 6px;
+    }
   }
 
   .dialog__email{
     height: 81px;
+    position: relative;
+    &::after{
+        content: url(img/mail.svg);
+        position: absolute;
+        right: 10px;
+        bottom: 6px; 
+    }
   }
 
   .dialog__comment{
     height: 134px;
+    position: relative;
+    &::after{
+        content: url(img/comment.svg);
+        position: absolute;
+        right: 10px;
+        bottom: 59px; 
+    }
   }
 
   .name__input{
-    @include shape(45px, 424px);
+    @include shape(48px, 440px);
     border-radius: 8px;
-  }
+    padding-left: 10px;
+    padding-right: 45px;
+    box-sizing: border-box;
+}
 
   .email__input{
-    @include shape(42px, 424px);
+    @include shape(48px, 440px);
     border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 45px;
+    box-sizing: border-box;
   }
 
   .comment__input{
-    @include shape(95px, 424px);
+    @include shape(100px, 440px);
     border-radius: 8px;
     font-family: inherit;
     resize: none;
     border-width: 2px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 45px;
+    box-sizing: border-box;
   }
 
   @media (max-width: 768px){
@@ -140,6 +173,7 @@
 }
 
 #modal__cancel{
+  @include txt("Roboto", 500, 18px);
   @extend .button-style;
   width: 208px;
   background-color: white;
@@ -161,6 +195,7 @@
 }
 
 #modal__send{
+  @include txt("Roboto", 500, 18px);
   @extend .button-style;
   width: 208px;
   background-color: black;
