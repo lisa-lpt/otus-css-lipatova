@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/6bfbb3dee2.js" crossorigin="anonymous"></script>
   <title>Document</title>
   <link rel="stylesheet" href="reset.css">
   <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Playfair+Display:wght@500;600&family=Bitter:wght@400">-->
@@ -13,20 +14,56 @@
   <header class="container header"> 
     <h2 class="header__heading">Mod</h2>
     <!--Page navigation-->
-    <nav class="header-nav header__nav_desktop"> 
-      <a href="#biography">Biography</a>
-      <a href="#designers">Designers</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#strong-points">Strong points</a>
-      <img class="header-nav__icon" src="img/union.svg" alt="icon">
-    </nav>
-    <nav class="header-nav header__nav_tablet"> 
-      <a href="#biography">B</a>
-      <a href="#designers">D</a>
-      <a href="#testimonials">T</a>
-      <a href="#strong-points">S</a>
-      <img class="header-nav__icon" src="img/union.svg" alt="icon">
-    </nav>
+    <div class="header__nav">
+      <div class="header__nav-container">
+        <nav class="header__nav_desktop"> 
+          <a href="#biography">Biography</a>
+          <a href="#designers">Designers</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#strong-points">Strong points</a>
+        </nav>
+        <nav class="header__nav_tablet"> 
+          <a href="#biography">B</a>
+          <a href="#designers">D</a>
+          <a href="#testimonials">T</a>
+          <a href="#strong-points">S</a>
+        </nav>
+      </div>
+      <!-- Popup -->
+      <div class="modal">
+        <button id="modal-wrap" onclick="window.dialog.showModal()"> 
+          <img src="img/union.svg" alt="icon">
+        </button>
+        <dialog id="dialog">
+          <div class="dialog-container">
+          <div class="dialog__text-container">
+            <h3>Get in touch</h3>
+            <div class="dialog__text">
+              <p>Do you have any questions?Have someting to say?</p>
+              <p>Don't be shy, write to us:</p>
+            </div>
+          </div>
+          <form action="#" method="get">
+          <label class="dialog__name">
+            <span>Name</span>
+            <input class="name__input" type="text" name="name" placeholder=" 3+ Characters" required>
+          </label>
+          <label class="dialog__email">
+            <span>E-mail</span>
+            <input class="email__input" type="email" name="email" placeholder=" name@email.com" required>
+          </label>
+          <label class="dialog__comment">
+            <span>Comment</span>
+            <textarea class="comment__input" placeholder=" Some text..."></textarea>
+          </label>
+          <button id="modal__cancel" onclick="window.dialog.close()">Cancel</button>
+          <!-- <input id="modal__send" type="submit" value="Send"/> -->
+          <button id="modal__send" type="submit" ><i class="fa-solid fa-plus"></i> Send</button>
+        </form>
+        </div>
+        </dialog>
+      </div>
+    </div>
   </header>
   <main class="container">
     <!--Main picture-->
