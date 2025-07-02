@@ -90,6 +90,14 @@
       max-width: 525px;
       word-spacing: normal;
       @include txt('Playfair Display', 400, 64px);
+      &::before{
+        content: "";
+        display: inline-block;
+        border: 2px solid black;
+        width: 20px;
+        position: relative;
+        bottom: 20px;
+      }
     }
   }
 
@@ -121,11 +129,22 @@
   max-width: 375px;
   line-height: 115%;
   padding-top: 22px;
+  &::before{
+    content: "";
+    display: block;
+    border: 3px solid black;
+    width: 15px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 768px){
   .biography-desc__quote{
     max-width: 525px;
     @include txt('Bitter', 300, 30px);
+    &::before{
+      content:"";
+      border: 0;
+    }
   }
 }

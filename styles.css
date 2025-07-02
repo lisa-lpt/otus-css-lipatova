@@ -174,11 +174,8 @@ header.container {
 }
 
 #dialog {
-  height: 589px;
-  width: 476px;
   position: fixed;
   border: none;
-  padding: 26px;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -187,9 +184,17 @@ header.container {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.dialog-container {
+  height: 589px;
+  width: 476px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .dialog__text-container {
   height: 90px;
-  max-width: 424px;
+  width: 424px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -203,25 +208,130 @@ header.container {
 
 .dialog__text {
   height: 41px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 @media (max-width: 768px) {
-  #dialog {
+  .dialog-container {
     width: 442px;
   }
   .dialog__text-container {
-    max-width: 390px;
+    max-width: 402px;
   }
 }
 @media (max-width: 450px) {
-  #dialog {
+  .dialog-container {
     width: 363px;
   }
   .dialog__text-container {
-    max-width: 311px;
+    width: 323px;
   }
   .dialog__text {
     height: 60px;
+  }
+}
+form {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 360px;
+  width: 435px;
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 402px;
+  }
+}
+@media (max-width: 450px) {
+  form {
+    width: 323px;
+  }
+}
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dialog__name {
+  height: 81px;
+  position: relative;
+}
+.dialog__name::after {
+  content: url(img/name.svg);
+  position: absolute;
+  right: 10px;
+  bottom: 6px;
+}
+
+.dialog__email {
+  height: 81px;
+  position: relative;
+}
+.dialog__email::after {
+  content: url(img/mail.svg);
+  position: absolute;
+  right: 10px;
+  bottom: 6px;
+}
+
+.dialog__comment {
+  height: 134px;
+  position: relative;
+}
+.dialog__comment::after {
+  content: url(img/comment.svg);
+  position: absolute;
+  right: 10px;
+  bottom: 59px;
+}
+
+.name__input {
+  height: 48px;
+  width: 440px;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 45px;
+  box-sizing: border-box;
+}
+
+.email__input {
+  height: 48px;
+  width: 440px;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 45px;
+  box-sizing: border-box;
+}
+
+.comment__input {
+  height: 100px;
+  width: 440px;
+  border-radius: 8px;
+  font-family: inherit;
+  resize: none;
+  border-width: 2px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 45px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .name__input, .email__input, .comment__input {
+    width: 390px;
+  }
+}
+@media (max-width: 450px) {
+  .name__input, .email__input, .comment__input {
+    width: 311px;
   }
 }
 .button-style, #modal__send, #modal__cancel {
@@ -231,6 +341,9 @@ header.container {
 }
 
 #modal__cancel {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
   width: 208px;
   background-color: white;
   position: absolute;
@@ -251,6 +364,9 @@ header.container {
   }
 }
 #modal__send {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
   width: 208px;
   background-color: black;
   color: white;
@@ -451,6 +567,14 @@ h4 { /* все заголовки категорий*/
     font-weight: 400;
     font-size: 64px;
   }
+  .biography-text__name::before {
+    content: "";
+    display: inline-block;
+    border: 2px solid black;
+    width: 20px;
+    position: relative;
+    bottom: 20px;
+  }
 }
 .biography-desc__text_desktop {
   font-size: 18px;
@@ -482,6 +606,13 @@ h4 { /* все заголовки категорий*/
   line-height: 115%;
   padding-top: 22px;
 }
+.biography-desc__quote::before {
+  content: "";
+  display: block;
+  border: 3px solid black;
+  width: 15px;
+  margin-bottom: 20px;
+}
 
 @media (max-width: 768px) {
   .biography-desc__quote {
@@ -489,6 +620,10 @@ h4 { /* все заголовки категорий*/
     font-family: "Bitter";
     font-weight: 300;
     font-size: 30px;
+  }
+  .biography-desc__quote::before {
+    content: "";
+    border: 0;
   }
 }
 /*Designers*/
