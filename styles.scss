@@ -1,0 +1,262 @@
+@import "reset";
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Medium"),
+  local("Roboto-Medium"),
+  url("/fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Bold"),
+  local("Roboto-Bold"),
+  url("/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: local("Playfair Display Regular"),
+  local("PlayfairDisplay-Regular"),
+  url("/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: local("Playfair Display Medium"),
+  local("PlayfairDisplay-Medium"),
+  url("/fonts/PlayfairDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: local("Playfair Display Semibold"),
+  local("PlayfairDisplay-Semibold"),
+  url("/fonts/PlayfairDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+/*@font-face {
+font-family: "Bitter";
+src: local("Bitter Regular"),
+local("Bitter-Regular"),
+url("/fonts/Bitter-Regular.ttf") format("truetype");
+font-weight: 400;
+}*/
+
+@mixin txt ($ff, $fw, $fs) {
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fs;
+}
+
+body {
+  @include txt("Roboto", 500, 16px);
+  line-height: 1;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+/* Header */
+
+header.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.header__heading {
+  @include txt("Playfair Display", 600, 86px);
+  margin-left: 21px;
+}
+
+@media (max-width: 768px){
+  .header__heading{
+    display: none;
+  }
+}
+
+.header__nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px){
+  .header__nav{
+    width: 100%
+  }
+}
+
+.header__nav-container{
+  align-self: center;
+  width: 95%;
+}
+
+.header__nav_desktop{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-right: 10px;
+  gap: 55px;
+  font-size: 24px;
+
+}
+
+.header__nav_tablet{
+  display: none;
+}
+
+@media (max-width: 768px){
+  .header__nav_desktop{
+    display: none;
+  }
+  .header__nav_tablet {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    @include txt("Bitter", 400, 40px);
+}
+}
+
+// Popup
+@import "popup";
+
+/* Mod studio */
+
+h1 {
+  @include txt('Playfair Display', 500, 86px);
+  margin-top: 120px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 768px){
+  h1{
+    @include txt('Playfair Display', 400, 70px);
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:blanchedalmond;
+  min-height: 630px;
+  background-image: url(/img/ms.jpg);
+  background-position: center;
+}
+
+.box__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 690px;
+  height: 360px;
+  background-color: white;
+}
+
+.box__img-container{
+  display: none;
+}
+
+@media (max-width: 768px){
+  .box{
+    background-color: white;
+    background-image: none;
+    max-height: 685px;
+    min-height: auto;
+  }
+  .box__text{
+    min-width: 320px;
+    max-width: 690px;
+    width: auto;
+    height: 303px;
+  }
+  h1{
+    margin-top: 78px;
+  }
+  .box__img-container{
+    display: contents;
+    max-width: 680px;
+  }
+  .box__img{
+    width: 100%;
+  }
+}
+
+h3 {
+  font-size: 20px;
+}
+
+@media (max-weight: 768px){
+  h3{
+    font-size: 18px;
+  }
+}
+
+/* Biography */
+
+h4 {/* все заголовки категорий*/
+  @include txt('Roboto', 700, 24px);
+}
+
+@media (max-width: 768px){
+  h4{
+    font-size: 18px;
+  }
+}
+
+@import "biography";
+
+
+/*Designers*/
+@import "designers";
+
+/* Testimonials */
+@import "testimonials";
+
+/* Strong points */
+
+@import "strong-points";
+
+/* Footer */
+.footer {
+  padding: 25px;
+  height: 115px;
+  background-color: black; 
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mod {
+  font-size: 24px;
+}
+
+.footer__copyright_tablet{
+  display: none;
+}
+
+@media (max-width: 768px){
+  .footer__copyright_desktop{
+    display: none;
+  }
+  .footer__copyright_tablet{
+    display: contents;
+  }
+}
