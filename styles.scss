@@ -54,6 +54,10 @@ font-weight: 400;
     font-size: $fs;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   @include txt("Roboto", 500, 16px);
   line-height: 1;
@@ -114,6 +118,30 @@ header.container {
   display: none;
 }
 
+.header__nav_desktop a:hover{
+  text-decoration: underline;
+}
+
+.header__nav_desktop a:focus{
+  text-decoration: underline;
+}
+
+.header__nav_tablet a:hover{
+  color: #A07C72;
+  text-decoration: none;
+}
+
+.header__nav_tablet a:active{
+  color: #E0B59F;
+}
+ 
+.header__nav_tablet a:focus{
+  color: #A07C72;
+  border: 1px solid #E0B59F;
+  border-radius: 10px;
+  outline: none;
+}
+
 @media (max-width: 768px){
   .header__nav_desktop{
     display: none;
@@ -123,7 +151,12 @@ header.container {
     justify-content: space-around;
     flex-wrap: wrap;
     @include txt("Bitter", 400, 40px);
-}
+  }
+  .header__nav_tablet a {
+    border: 1px solid transparent;
+    padding: 10px 20px 10px 20px;
+    transition: all 1s;
+  }
 }
 
 // Popup
