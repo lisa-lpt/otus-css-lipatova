@@ -63,6 +63,10 @@ body {
   line-height: 1;
 }
 
+body:has(dialog[open]) {
+overflow: hidden;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1440px;
