@@ -125,22 +125,22 @@ header.container {
     display: none;
   }
 }
-.header__nav {
+.header__nav-container {
   display: flex;
   justify-content: space-between;
 }
 
 @media (max-width: 768px) {
-  .header__nav {
+  .header__nav-container {
     width: 100%;
   }
 }
-.header__nav-container {
+.nav-container__nav {
   align-self: center;
   width: 95%;
 }
 
-.header__nav_desktop {
+.nav__desktop {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -150,28 +150,28 @@ header.container {
   font-size: 24px;
 }
 
-.header__nav_tablet {
+.nav__tablet {
   display: none;
 }
 
-.header__nav_desktop a:hover {
+.nav__desktop a:hover {
   text-decoration: underline;
 }
 
-.header__nav_desktop a:focus {
+.nav__desktop a:focus {
   text-decoration: underline;
 }
 
-.header__nav_tablet a:hover {
+.nav__tablet a:hover {
   color: #A07C72;
   text-decoration: none;
 }
 
-.header__nav_tablet a:active {
+.nav__tablet a:active {
   color: #E0B59F;
 }
 
-.header__nav_tablet a:focus {
+.nav__tablet a:focus {
   color: #A07C72;
   border: 1px solid #E0B59F;
   border-radius: 10px;
@@ -179,10 +179,10 @@ header.container {
 }
 
 @media (max-width: 768px) {
-  .header__nav_desktop {
+  .nav__desktop {
     display: none;
   }
-  .header__nav_tablet {
+  .nav__tablet {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -190,7 +190,7 @@ header.container {
     font-weight: 400;
     font-size: 40px;
   }
-  .header__nav_tablet a {
+  .nav__tablet a {
     border: 1px solid transparent;
     padding: 10px 20px 10px 20px;
     transition: all 1s;
@@ -231,14 +231,14 @@ path {
   border-radius: 10px;
 }
 
-#dialog {
+.dialog {
   position: fixed;
   border: none;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
 }
-#dialog::backdrop {
+.dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -772,19 +772,19 @@ h4 { /* все заголовки категорий*/
     bottom: 20px;
   }
 }
-.biography-desc__text_desktop {
+.biography-desc-text__desktop {
   font-size: 18px;
 }
 
-.biography-desc__text_tablet {
+.biography-desc-text__tablet {
   display: none;
 }
 
 @media (max-width: 768px) {
-  .biography-desc__text_desktop {
+  .biography-desc-text__desktop {
     display: none;
   }
-  .biography-desc__text_tablet {
+  .biography-desc-text__tablet {
     display: contents;
     font-size: 18px;
   }
@@ -832,7 +832,7 @@ h4 { /* все заголовки категорий*/
   margin: 5px 0 30px 140px;
 }
 
-.designers {
+.designers-section {
   margin: 0 0 130px 21px;
   height: 640px;
   display: flex;
@@ -842,12 +842,12 @@ h4 { /* все заголовки категорий*/
 }
 
 @media (max-width: 768px) {
-  .designers {
+  .designers-section {
     margin: 0 0 80px 21px;
     height: auto;
   }
 }
-.designers__item {
+.designers-section__item {
   width: 100%;
 }
 
@@ -936,7 +936,7 @@ h4 { /* все заголовки категорий*/
   place-self: center;
 }
 
-.testimonials_quote {
+.testimonials__quote {
   font-family: "Bitter";
   font-weight: 400;
   font-size: 32px;
@@ -1003,7 +1003,7 @@ h4 { /* все заголовки категорий*/
     padding: 0;
     align-self: flex-end;
   }
-  .testimonials_quote {
+  .testimonials__quote {
     grid-column: 1/4;
     grid-row: 1/4;
     align-self: center;
@@ -1055,19 +1055,19 @@ h4 { /* все заголовки категорий*/
   .testimonials__img2 {
     aspect-ratio: 1.2545454545;
   }
-  .testimonials_quote {
+  .testimonials__quote {
     grid-column: 1/-1;
     grid-row: 1/3;
     max-width: 342px;
   }
 }
 /* Strong points */
-.strong-points__title {
+.strong-points-section__title {
   margin: 140px 0 30px 260px;
 }
 
 @media (max-width: 768px) {
-  .strong-points__title {
+  .strong-points-section__title {
     margin: 80px 0 30px 15px;
   }
 }
@@ -1093,7 +1093,7 @@ h4 { /* все заголовки категорий*/
     flex-direction: row-reverse;
   }
 }
-.strpng-points__front-container {
+.strong-points__front-container {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -1106,7 +1106,7 @@ h4 { /* все заголовки категорий*/
 }
 
 @media (max-width: 768px) {
-  .strpng-points__front-container {
+  .strong-points__front-container {
     height: 450px;
   }
   .strong-points__front-img-container {
@@ -1228,15 +1228,15 @@ h4 { /* все заголовки категорий*/
   font-size: 24px;
 }
 
-.footer__copyright_tablet {
+.footer__copyright-tablet {
   display: none;
 }
 
 @media (max-width: 768px) {
-  .footer__copyright_desktop {
+  .footer__copyright-desktop {
     display: none;
   }
-  .footer__copyright_tablet {
+  .footer__copyright-tablet {
     display: contents;
   }
 }/*# sourceMappingURL=styles.css.map */

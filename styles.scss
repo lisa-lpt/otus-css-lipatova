@@ -91,23 +91,23 @@ header.container {
   }
 }
 
-.header__nav{
+.header__nav-container{
   display: flex;
   justify-content: space-between;
 }
 
 @media (max-width: 768px){
-  .header__nav{
+  .header__nav-container{
     width: 100%
   }
 }
 
-.header__nav-container{
+.nav-container__nav{
   align-self: center;
   width: 95%;
 }
 
-.header__nav_desktop{
+.nav__desktop{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -118,28 +118,28 @@ header.container {
 
 }
 
-.header__nav_tablet{
+.nav__tablet{
   display: none;
 }
 
-.header__nav_desktop a:hover{
+.nav__desktop a:hover{
   text-decoration: underline;
 }
 
-.header__nav_desktop a:focus{
+.nav__desktop a:focus{
   text-decoration: underline;
 }
 
-.header__nav_tablet a:hover{
+.nav__tablet a:hover{
   color: #A07C72;
   text-decoration: none;
 }
 
-.header__nav_tablet a:active{
+.nav__tablet a:active{
   color: #E0B59F;
 }
  
-.header__nav_tablet a:focus{
+.nav__tablet a:focus{
   color: #A07C72;
   border: 1px solid #E0B59F;
   border-radius: 10px;
@@ -147,16 +147,16 @@ header.container {
 }
 
 @media (max-width: 768px){
-  .header__nav_desktop{
+  .nav__desktop{
     display: none;
   }
-  .header__nav_tablet {
+  .nav__tablet {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     @include txt("Bitter", 400, 40px);
   }
-  .header__nav_tablet a {
+  .nav__tablet a {
     border: 1px solid transparent;
     padding: 10px 20px 10px 20px;
     transition: all 1s;
@@ -285,15 +285,15 @@ h4 {/* все заголовки категорий*/
   font-size: 24px;
 }
 
-.footer__copyright_tablet{
+.footer__copyright-tablet{
   display: none;
 }
 
 @media (max-width: 768px){
-  .footer__copyright_desktop{
+  .footer__copyright-desktop{
     display: none;
   }
-  .footer__copyright_tablet{
+  .footer__copyright-tablet{
     display: contents;
   }
 }

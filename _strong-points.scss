@@ -1,9 +1,9 @@
-.strong-points__title {
+.strong-points-section__title {
   margin: 140px 0 30px 260px;  
 }
 
 @media (max-width: 768px){
-  .strong-points__title{
+  .strong-points-section__title{
     margin: 80px 0 30px 15px;
   }
 }
@@ -31,7 +31,7 @@
   }
 }
 
-.strpng-points__front-container{
+.strong-points__front-container{
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -44,7 +44,7 @@
 }
 
 @media (max-width: 768px){
-  .strpng-points__front-container{
+  .strong-points__front-container{
     height: 450px;
   }
   .strong-points__front-img-container{

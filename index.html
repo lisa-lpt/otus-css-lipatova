@@ -14,15 +14,15 @@
   <header class="container header"> 
     <h2 class="header__heading">Mod</h2>
     <!--Page navigation-->
-    <div class="header__nav">
-      <div class="header__nav-container">
-        <nav class="header__nav_desktop"> 
+    <div class="header__nav-container nav-container">
+      <div class="nav-container__nav nav">
+        <nav class="nav__desktop"> 
           <a href="#biography">Biography</a>
           <a href="#designers">Designers</a>
           <a href="#testimonials">Testimonials</a>
           <a href="#strong-points">Strong points</a>
         </nav>
-        <nav class="header__nav_tablet"> 
+        <nav class="nav__tablet"> 
           <a href="#biography">B</a>
           <a href="#designers">D</a>
           <a href="#testimonials">T</a>
@@ -37,7 +37,7 @@
           </svg>
           <!-- <img src="img/union.svg" alt="icon"> -->
         </button>
-        <dialog id="dialog">
+        <dialog class="dialog">
           <div class="dialog-container">
           <div class="dialog__text-container">
             <h3>Get in touch</h3>
@@ -47,15 +47,15 @@
             </div>
           </div>
           <form action="#" method="get">
-          <label class="dialog__name">
+          <label class="dialog__name name">
             <span>Name</span>
             <input class="name__input" type="text" name="name" placeholder=" 3+ Characters" required>
           </label>
-          <label class="dialog__email">
+          <label class="dialog__email email">
             <span>E-mail</span>
             <input class="email__input" type="email" name="email" placeholder=" name@email.com" required>
           </label>
-          <label class="dialog__comment">
+          <label class="dialog__comment comment">
             <span>Comment</span>
             <textarea class="comment__input" placeholder=" Some text..."></textarea>
           </label>
@@ -90,12 +90,12 @@
           <h2 class="biography-text__name">Katya Mills</h2>
           <div class="biography-desc biography-text__desc">
             <blockquote class="biography-desc__quote">"The more i deal with the work as something that is my own, as something that is personal, the more successful it is"</blockquote>
-            <div class="biography-desc__text">
-              <div class="biography-desc__text_desktop">
+            <div class="biography-desc__text biography-desc-text">
+              <div class="biography-desc-text__desktop">
                 <p><strong>Art Director</strong></p>
                 <p><strong>Scenography / Styling / Creative Photography / Design</strong></p>
               </div>
-              <div class="biography-desc__text_tablet">
+              <div class="biography-desc-text__tablet">
                 <p><strong>Art Director</strong></p>
                 <ul>
                   <li>-Scenography</li>
@@ -110,18 +110,18 @@
       </div>
     </section>
     <!--Designers-->
-    <section id="designers">
+    <section class="designers" id="designers">
       <h4 class="designers__title">Designers</h4>
-      <ul class="designers">
-        <li class="designers-item designers__item">
-          <img class="designers-item__img_big" src="img/j.jpg" alt="Jess Wonder">
+      <ul class="designers-section">
+        <li class="designers-item designers-section__item">
+          <img class="designers-item__img designers-item__img_big" src="img/j.jpg" alt="Jess Wonder">
           <div class="designers-item__desc designers-item__desc_big">
             <p><strong>JESS WONDER</strong></p>
             <p><strong>From/</strong> Be more flower</p>
             <p><strong>Skills/</strong> Design Strategy/Marketing</p>
           </div> 
         </li>
-        <li class="designers-item designers__item">
+        <li class="designers-item designers-section__item">
           <img class="designers-item__img" src="img/kam.jpg" alt="Kameron Klein">
           <div class="designers-item__desc">
             <p><strong>KAMERON CLEIN</strong></p>
@@ -129,7 +129,7 @@
             <p><strong>Skills/</strong> Design Strategy/Marketing</p>
           </div>
         </li>
-        <li class="designers-item designers__item">
+        <li class="designers-item designers-section__item">
           <img class="designers-item__img" src="img/lou.jpg" alt="Louisse Red">
           <div class="designers-item__desc">
             <p><strong>LOUISSE RED</strong></p>
@@ -137,7 +137,7 @@
             <p><strong>Skills/</strong> Design Strategy/Marketing</p>
           </div>
         </li>
-        <li class="designers-item designers__item">
+        <li class="designers-item designers-section__item">
           <img class="designers-item__img" src="img/kam.jpg" alt="Kameron Klein">
           <div class="designers-item__desc">
             <p><strong>KAMERON CLEIN</strong></p>
@@ -166,18 +166,18 @@
           <p><strong>Website</strong></p>
           <a href="https://www.whitepapers.com">www.whitepapers.com</a>
         </div>
-        <blockquote class="testimonials_quote">I just really want to do good work <br/> and work with some great people, people who challenge me. </blockquote>
+        <blockquote class="testimonials__quote">I just really want to do good work <br/> and work with some great people, people who challenge me. </blockquote>
         <div class="testimonials__img-container2">
           <img class="testimonials__img2" src="img/pac.jpg" alt="Bag">
         </div>
       </div>
     </section>
     <!--Strong points-->
-    <section id="strong-points">
-      <h4 class="strong-points__title">Strong points</h4>
+    <section class="strong-points-section" id="strong-points">
+      <h4 class="strong-points-section__title">Strong points</h4>
       <div class="strong-points">
         <div class="strong-points__container">
-          <div class="strpng-points__front-container">
+          <div class="strong-points__front-container">
             <div class="strong-points__front-img-container">
               <img class="strong-points__img1" src="img/table.jpg" alt="Table">
             </div>
@@ -218,10 +218,10 @@
       <div class="footer__info">
         <a href="tel:+79211234567">+7 921 123-45-67</a>
         <a href="mailto:info@modstudio.com">INFO@MODSTUDIO.COM</a>
-        <p class="footer__copyright_tablet"> &copy; 2023 Mod Media.All rights reserved</p>
+        <p class="footer__copyright-tablet"> &copy; 2023 Mod Media.All rights reserved</p>
       </div>
       <p>A product of <strong class="mod">MOD</strong></p> 
-      <p class="footer__copyright_desktop"> &copy; 2023 Mod Media.All rights reserved</p>
+      <p class="footer__copyright-desktop"> &copy; 2023 Mod Media.All rights reserved</p>
     </div>
   </footer>
 </body>

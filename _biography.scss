@@ -103,19 +103,19 @@
     }
   }
 
-.biography-desc__text_desktop {
+.biography-desc-text__desktop {
   font-size:18px;
 }
 
-.biography-desc__text_tablet {
+.biography-desc-text__tablet {
   display: none;
 }
 
 @media (max-width: 768px){
-  .biography-desc__text_desktop{
+  .biography-desc-text__desktop{
     display: none;
   }
-  .biography-desc__text_tablet{
+  .biography-desc-text__tablet{
     display: contents;
     font-size: 18px;
   }

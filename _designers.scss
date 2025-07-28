@@ -13,7 +13,7 @@ $card-width-tablet: 336px;
   margin: 5px 0 30px 140px;    
 }    
 
-.designers {
+.designers-section {
   margin: 0 0 130px 21px;    
   height: 640px;
   display: flex;
@@ -23,13 +23,13 @@ $card-width-tablet: 336px;
 }    
 
 @media (max-width: 768px){
-  .designers {
+  .designers-section {
     margin: 0 0 80px 21px;    
     height: auto;
   }    
 }    
 
-.designers__item{
+.designers-section__item{
   width: 100%;    
 }  
   
